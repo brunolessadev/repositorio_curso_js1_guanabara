@@ -22,3 +22,7 @@ color: white;
 text-align: center;
 font-style: italic;
 }
+
+td {
+    padding: 5px;
+}
