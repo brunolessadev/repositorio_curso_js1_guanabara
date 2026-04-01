@@ -1,18 +1,18 @@
 body{
 background: rgb(80, 80, 219);
 font: normal 15pt Arial;
+text-align: center;
 }
 
 header{
 color: white;
-text-align: center;
 }
 
 section{
 background: white;
 border-radius: 10px;
-padding: 15px;
-width: 500px;
+padding: 20px;
+width: 200px;
 margin: auto;
 box-shadow: 5px 5px 10px rgb(34, 32, 32);
 }
@@ -21,4 +21,53 @@ footer{
 color: white;
 text-align: center;
 font-style: italic;
+}
+
+#sec{
+    display: flex; /* 1. Transforma a section num container flexível */
+    flex-direction: column; /* 2. Empilha os itens um em cima do outro (na vertical) */
+    align-items: center; /* 3. Centraliza os itens na horizontal */
+}
+
+#txtn {
+            width: 100;
+            font-size: 16px; /* Bônus: Aumenta o tamanho do número dentro da caixa */
+            text-align: center;
+            padding: 5px;
+            border-radius: 2px;
+        }
+
+#seltab{
+    font-size: 18px;
+    padding: 10px;
+     &::-webkit-scrollbar {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  display: none; /* Esconde o select por padrão */
+
+}
+
+#bt{
+    width: 210px;
+    font-size: 16px;
+    background-color: rgb(80, 80, 219);
+    color: white;
+    padding: 10px;
+}
+
+res{
+    text-align: center; 
+}
+
+#txtn::-webkit-outer-spin-button,
+#txtn::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Garante que não sobre nenhum espaço */
+}
+
+/* Para o Firefox */
+#txtn[type=number] {
+  -moz-appearance: textfield;
 }
